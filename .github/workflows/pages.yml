@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - main
-      - site
     paths:
       - 'site/**'
 
@@ -16,8 +15,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy-site:
-    name: Deploy site
+  build-site:
+    name: Build site
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -44,7 +43,7 @@ jobs:
 
   deploy:
     name: Deploy to GitHub Pages
-    needs: build
+    needs: build-site
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
