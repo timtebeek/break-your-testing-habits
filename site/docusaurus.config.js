@@ -64,7 +64,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/social-card.jpg',
       colorMode: {
         respectPrefersColorScheme: true,
       },
@@ -72,7 +72,7 @@ const config = {
         title: 'Break your testing habits',
         logo: {
           alt: 'Logo',
-          src: 'img/logo.svg',
+          src: 'img/rewrite-logo.png',
         },
         items: [
           {
@@ -89,31 +89,43 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                  label: 'OpenRewrite',
+                  href: 'https://docs.openrewrite.org/recipes/java/testing/assertj/assertj-best-practices',
+              },
+              {
+                  label: 'Moderne',
+                  href: 'https://docs.moderne.io/',
+              },
+              {
+                  label: 'Error Prone Support',
+                  href: 'https://error-prone.picnic.tech/refasterrules/AssertJArrayRules/',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Socials',
             items: [
                 {
-                    label: 'BlueSky',
+                    label: 'OpenRewrite',
+                    href: 'https://bsky.app/profile/openrewrite.github.io',
+                },
+                {
+                    label: 'Moderne',
+                    href: 'https://bsky.app/profile/did:plc:vnhmeu5qj3w4rdoagg4pan7g',
+                },
+                {
+                    label: 'Tim',
                     href: 'https://bsky.app/profile/timtebeek.github.io',
                 },
                 {
-                    label: 'OpenRewrite',
-                    href: 'https://docs.openrewrite.org/recipes/java/testing/assertj/assertj-best-practices',
-                },
-                {
-                    label: 'Error Prone Support',
-                    href: 'https://error-prone.picnic.tech/refasterrules/AssertJArrayRules/',
+                    label: 'Rick',
+                    href: 'https://bsky.app/profile/did:plc:3tp5547p3bgmzq3n6v6dad4f',
                 },
             ],
           },
