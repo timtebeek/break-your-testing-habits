@@ -1,7 +1,6 @@
 package com.github.timtebeek.orders;
 
 import java.math.BigDecimal;
-import java.util.Objects;
 
 public class OrderItem {
     private final String productId;
@@ -42,35 +41,5 @@ public class OrderItem {
 
     public BigDecimal getLineTotal() {
         return lineTotal;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        OrderItem orderItem = (OrderItem) o;
-        return quantity == orderItem.quantity &&
-                Objects.equals(productId, orderItem.productId) &&
-                Objects.equals(productName, orderItem.productName) &&
-                Objects.equals(category, orderItem.category) &&
-                Objects.equals(unitPrice, orderItem.unitPrice) &&
-                Objects.equals(lineTotal, orderItem.lineTotal);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(productId, productName, category, quantity, unitPrice, lineTotal);
-    }
-
-    @Override
-    public String toString() {
-        return "OrderItem{" +
-                "productId='" + productId + '\'' +
-                ", productName='" + productName + '\'' +
-                ", category='" + category + '\'' +
-                ", quantity=" + quantity +
-                ", unitPrice=" + unitPrice +
-                ", lineTotal=" + lineTotal +
-                '}';
     }
 }

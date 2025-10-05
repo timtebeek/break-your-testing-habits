@@ -3,7 +3,6 @@ package com.github.timtebeek.orders;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Objects;
 
 public class Order {
     private final String orderId;
@@ -69,43 +68,5 @@ public class Order {
 
     public BigDecimal getTotal() {
         return total;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Order order = (Order) o;
-        return Objects.equals(orderId, order.orderId) &&
-                Objects.equals(customerId, order.customerId) &&
-                Objects.equals(orderDate, order.orderDate) &&
-                Objects.equals(status, order.status) &&
-                Objects.equals(items, order.items) &&
-                Objects.equals(subtotal, order.subtotal) &&
-                Objects.equals(tax, order.tax) &&
-                Objects.equals(shippingCost, order.shippingCost) &&
-                Objects.equals(discount, order.discount) &&
-                Objects.equals(total, order.total);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(orderId, customerId, orderDate, status, items, subtotal, tax, shippingCost, discount, total);
-    }
-
-    @Override
-    public String toString() {
-        return "Order{" +
-                "orderId='" + orderId + '\'' +
-                ", customerId='" + customerId + '\'' +
-                ", orderDate=" + orderDate +
-                ", status='" + status + '\'' +
-                ", items=" + items +
-                ", subtotal=" + subtotal +
-                ", tax=" + tax +
-                ", shippingCost=" + shippingCost +
-                ", discount=" + discount +
-                ", total=" + total +
-                '}';
     }
 }
