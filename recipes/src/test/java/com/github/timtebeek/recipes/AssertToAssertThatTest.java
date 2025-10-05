@@ -27,11 +27,11 @@ class AssertToAssertThatTest implements RewriteTest {
               }
               """,
             """
-              import static org.assertj.core.api.Assertions.assertThat;
+              import org.assertj.core.api.Assertions;
 
               class Test {
                   void test(Object obj) {
-                      assertThat(obj).isNull();
+                      Assertions.assertThat(obj).isNull();
                   }
               }
               """
@@ -52,11 +52,11 @@ class AssertToAssertThatTest implements RewriteTest {
               }
               """,
             """
-              import static org.assertj.core.api.Assertions.assertThat;
+              import org.assertj.core.api.Assertions;
 
               class Test {
                   void test(Object obj) {
-                      assertThat(obj).as("Object should be null").isNull();
+                      Assertions.assertThat(obj).as("Object should be null").isNull();
                   }
               }
               """

@@ -53,6 +53,7 @@
         <dependency>
             <groupId>org.openrewrite</groupId>
             <artifactId>rewrite-templating</artifactId>
+            <version>1.36.1</version>
         </dependency>
         <dependency>
             <groupId>jakarta.annotation</groupId>
