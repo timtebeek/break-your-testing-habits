@@ -16,8 +16,6 @@ This restriction was removed in JUnit 5, where package-private visibility is suf
 <TabItem value="before" label="Before">
 
 ```java title="JUnitFourTest.java"
-import com.github.timtebeek.books.Book;
-import com.github.timtebeek.books.Bundle;
 import org.junit.Test;
 
 import java.util.List;
@@ -58,8 +56,6 @@ The basic assertion library also makes tests verbose and less expressive.
 <TabItem value="after" label="After">
 
 ```java title="JUnitFourTest.java"
-import com.github.timtebeek.books.Book;
-import com.github.timtebeek.books.Bundle;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

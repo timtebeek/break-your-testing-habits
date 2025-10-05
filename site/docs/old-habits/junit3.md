@@ -15,9 +15,6 @@ This makes tests verbose and harder to understand, especially when they fail.
 <TabItem value="before" label="Before">
 
 ```java title="JUnitThreeTest.java"
-import com.github.timtebeek.books.Book;
-import com.github.timtebeek.books.Bundle;
-
 import java.util.List;
 
 public class JUnitThreeTest extends junit.framework.TestCase {
@@ -50,8 +47,6 @@ The limited assertion library makes tests verbose and less readable.
 <TabItem value="after" label="After">
 
 ```java title="JUnitThreeTest.java"
-import com.github.timtebeek.books.Book;
-import com.github.timtebeek.books.Bundle;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

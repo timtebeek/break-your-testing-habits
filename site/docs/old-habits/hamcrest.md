@@ -16,8 +16,6 @@ This leads to verbose, nested calls that are harder to read than fluent assertio
 <TabItem value="before" label="Before">
 
 ```java title="HamcrestTest.java"
-import com.github.timtebeek.books.Book;
-import com.github.timtebeek.books.Bundle;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -56,8 +54,6 @@ Each assertion is a separate statement, making the test longer and harder to mai
 <TabItem value="after" label="After">
 
 ```java title="HamcrestTest.java"
-import com.github.timtebeek.books.Book;
-import com.github.timtebeek.books.Bundle;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
