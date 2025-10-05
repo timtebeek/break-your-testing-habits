@@ -1,0 +1,8 @@
+{
+  "label": "Bad habits",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Bad testing and assertion patterns."
+  }
+}

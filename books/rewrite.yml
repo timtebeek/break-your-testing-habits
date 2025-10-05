@@ -1,0 +1,18 @@
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: com.github.timtebeek.AdoptAssertJ
+displayName: Adopt AssertJ
+description: Adopt AssertJ and apply best practices to assertions.
+recipeList:
+  - org.openrewrite.java.testing.assertj.Assertj
+  - com.github.timtebeek.Java21ForTests
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: com.github.timtebeek.Java21ForTests
+displayName: Adopt Java 21 for tests
+description: >
+  Upgrade your tests to Java 21.
+preconditions:
+  - org.openrewrite.java.search.IsLikelyTest
+recipeList:
+  - org.openrewrite.java.migrate.UpgradeToJava21

@@ -1,0 +1,8 @@
+{
+  "label": "Old habits",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Old testing and assertion patterns."
+  }
+}
