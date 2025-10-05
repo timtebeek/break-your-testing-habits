@@ -79,7 +79,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Workshop',
           },
           {
             href: 'https://github.com/timtebeek/break-your-testing-habits',
