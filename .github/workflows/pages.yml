@@ -6,6 +6,7 @@ on:
     branches:
       - main
     paths:
+      - '.github/workflows/**'
       - 'site/**'
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
