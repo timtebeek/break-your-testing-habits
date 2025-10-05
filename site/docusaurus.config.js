@@ -137,6 +137,7 @@ const config = {
         darkTheme: prismThemes.dracula,
         additionalLanguages: [
             "bash",
+            "groovy",
             "java",
         ],
       },

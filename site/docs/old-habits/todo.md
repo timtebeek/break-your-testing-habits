@@ -1,5 +1,3 @@
-# TODO
-
 ### No tests at all
 
 ### JUnit 3
