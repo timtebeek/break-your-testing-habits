@@ -21,5 +21,5 @@ Here are some additional resources to help you learn more about the topics cover
 - [Try Moderne](https://www.moderne.ai/try-moderne): Explore Moderne with a free trial to see how it can help with code modernization.
 
 ## Contribute
-- [Contributing to OpenRewrite](https://github.com/openrewrite/rewrite-testing-frameworks): Guide on how to contribute to the OpenRewrite project.
-- [Contributing to Error Prone Support](https://github.com/PicnicSupermarket/error-prone-support): Instructions for contributing to the Error Prone Support project.
+- [Contribute to OpenRewrite](https://github.com/openrewrite/rewrite-testing-frameworks): Guide on how to contribute to the OpenRewrite project.
+- [Contribute to Error Prone Support](https://github.com/PicnicSupermarket/error-prone-support): Instructions for contributing to the Error Prone Support project.

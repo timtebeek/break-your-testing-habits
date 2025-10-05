@@ -1,3 +1,6 @@
+---
+sidebar_position: 1
+---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -165,7 +168,7 @@ Run the above command on the `books` project in this repository, and check the c
 :::note
 
 Notice how nearly all the bad and outdated practices have been replaced with AssertJ's fluent assertions.
-Also note how existing use of AssertJ has been improved by chaining assertions and removing redundant ones.
+Existing use of AssertJ has been improved by for instance chaining assertions and removing redundant calls.
 
 :::
 
@@ -176,5 +179,6 @@ Run the above command on your own project, and check the changes made to the tes
 :::info
 
 At this point you can choose whether you want to keep the changes or revert them.
+If you'd prefer a smaller set of changes, you can also try out individual recipes from the [AssertJ recipe family](https://docs.openrewrite.org/recipes/java/testing/assertj).
 
 :::
