@@ -308,3 +308,9 @@ Best practices for generated assertions:
 
 </TabItem>
 </Tabs>
+
+## Exercise A
+
+Open the `orders` project and explore the `Order` and `Customer` domain classes.
+Run the AssertJ assertion generator Maven plugin to create custom assertions for these classes.
+Then, use the assertion classes in a few test cases to verify their properties.
