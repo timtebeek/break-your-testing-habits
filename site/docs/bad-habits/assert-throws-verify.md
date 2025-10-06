@@ -4,7 +4,7 @@ import TabItem from '@theme/TabItem';
 # AssertThrows verify
 
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="AssertThrowsCatchTest.java"

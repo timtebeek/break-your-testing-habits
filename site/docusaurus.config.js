@@ -20,7 +20,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://timtebeek.github.io/',
+  url: 'https://openrewrite.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   // baseUrl: '/',
@@ -51,7 +51,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/timtebeek/break-your-testing-habits/tree/main/site/',
+            'https://github.com/openrewrite/break-your-testing-habits/tree/main/site/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -79,10 +79,10 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Workshop',
           },
           {
-            href: 'https://github.com/timtebeek/break-your-testing-habits',
+            href: 'https://github.com/openrewrite/break-your-testing-habits',
             label: 'GitHub',
             position: 'right',
           },
@@ -137,6 +137,7 @@ const config = {
         darkTheme: prismThemes.dracula,
         additionalLanguages: [
             "bash",
+            "groovy",
             "java",
         ],
       },

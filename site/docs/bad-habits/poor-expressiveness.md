@@ -9,7 +9,7 @@ Using a more expressive assertion library like AssertJ can significantly improve
 This not only makes the tests easier to understand but also helps in maintaining them over time.
 For example, consider a test that checks if a list contains a specific element.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="PoorExpressivenessTest.java"
