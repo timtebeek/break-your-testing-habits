@@ -9,7 +9,7 @@ Today, we're going to break your old testing habits and learn some new ones.
 This workshop consists of several sections, each focusing on a different aspect of improving your testing practices.
 
 1. [Bad habits](./category/bad-habits/) - We'll start by exploring some common but outdated testing patterns, and ways to improve them.
-1. [Old habits](./category/old-habits/) - We'll start by exploring some common but outdated testing patterns, and ways to improve them.
+1. [Old habits](./category/old-habits/) - After that, we'll look at legacy testing frameworks and libraries that are still in use today.
 1. [JUnit Jupiter](./category/junit-jupiter/) - Next, we'll upgrade to JUnit 6 and learn its new features.
 1. [Adopt AssertJ](./category/adopt-assertj/) - Then, we'll dive into AssertJ for more expressive assertions.
 1. [Advanced AssertJ](./category/advanced-assertj/) - Finally, we'll master fluent assertions for cleaner and more maintainable tests.

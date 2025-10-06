@@ -250,7 +250,7 @@ You may add the plugin to your `pom.xml` file, so that it is available for all d
 </project>
 ```
 
-2. Run run the recipe.
+2. Run the recipe.
 ```shell title="shell"
 mvn rewrite:run
 ```
