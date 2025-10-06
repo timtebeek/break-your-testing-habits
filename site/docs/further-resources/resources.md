@@ -16,6 +16,7 @@ Here are some additional resources to help you learn more about the topics cover
 - [Picnic's Error Prone Support](https://error-prone.picnic.tech/): Information on using Error Prone for static analysis in Java.
 
 ## Community and Support
+- [Monthly OpenRewrite training sessions](https://www.moderne.ai/moderne-openrewrite-training-hub): Sign up for free training sessions to learn more about OpenRewrite and Moderne.
 - [OpenRewrite commmunity Slack](https://join.slack.com/t/rewriteoss/shared_invite/zt-nj42n3ea-b~62rIHzb3Vo0E1APKCXEA): Join the community to ask questions and share knowledge about OpenRewrite.
 - [Moderne Platform](https://app.moderne.io/marketplace/org.openrewrite.java.testing): Explore and run recipes at scale through the Moderne platform.
 - [Try Moderne](https://www.moderne.ai/try-moderne): Explore Moderne with a free trial to see how it can help with code modernization.
