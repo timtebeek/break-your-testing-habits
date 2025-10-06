@@ -1,6 +1,5 @@
 # TODO
 
-- Explain recursive comparisons
 - Explain soft assertions
 - Explain custom assertions
 - Show reference implementation
