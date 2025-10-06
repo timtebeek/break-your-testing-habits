@@ -1,6 +1,3 @@
----
-sidebar_position: 7
----
 # Further resources
 
 Here are some additional resources to help you learn more about the topics covered in this documentation:
