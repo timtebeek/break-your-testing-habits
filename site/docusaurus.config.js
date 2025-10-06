@@ -51,7 +51,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/timtebeek/break-your-testing-habits/tree/main/site/',
+            'https://github.com/openrewrite/break-your-testing-habits/tree/main/site/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -82,7 +82,7 @@ const config = {
             label: 'Workshop',
           },
           {
-            href: 'https://github.com/timtebeek/break-your-testing-habits',
+            href: 'https://github.com/openrewrite/break-your-testing-habits',
             label: 'GitHub',
             position: 'right',
           },
