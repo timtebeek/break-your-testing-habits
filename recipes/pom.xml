@@ -134,6 +134,9 @@
                 <artifactId>rewrite-maven-plugin</artifactId>
                 <version>6.19.0</version>
                 <configuration>
+                    <activeRecipes>
+                        <recipe>org.openrewrite.recipes.rewrite.OpenRewriteRecipeBestPractices</recipe>
+                    </activeRecipes>
                 </configuration>
                 <dependencies>
                     <dependency>
