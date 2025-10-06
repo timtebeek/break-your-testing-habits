@@ -63,7 +63,7 @@ class ArgumentOrderTest {
 
 Using AssertJ's fluent assertions can help avoid issues with argument order, as the actual value is always the subject of the assertion.
 
-::::
+:::
 
 </TabItem>
 </Tabs>
@@ -93,7 +93,7 @@ class ArgumentOrderTest {
 
 The arguments to `assertNotNull` are in the wrong order. This test will incorrectly pass because the string "message" is not null.
 
-::::
+:::
 
 </TabItem>
 <TabItem value="after" label="After">
@@ -116,7 +116,7 @@ class ArgumentOrderTest {
 
 The message is now correctly associated with the assertion, and the test will fail as expected.
 
-::::
+:::
 
 </TabItem>
 </Tabs>
