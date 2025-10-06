@@ -5,7 +5,7 @@ import TabItem from '@theme/TabItem';
 
 When checking for multiple elements, chaining assertions is cleaner than multiple separate `assertTrue()` calls.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="AssertListContains.java"

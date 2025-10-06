@@ -12,7 +12,7 @@ Tests and classes must still be public, the assertion library is basic, and exce
 JUnit 4 requires both test classes and test methods to be public, which adds unnecessary boilerplate.
 This restriction was removed in JUnit 5, where package-private visibility is sufficient.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="JUnitFourTest.java"
@@ -98,7 +98,7 @@ Combined with AssertJ, tests become more concise and expressive.
 JUnit 4 improved on JUnit 3 by standardizing argument order, but it's still backwards compared to JUnit 5.
 In JUnit 4, the expected value comes first, while in JUnit 5 the actual value comes first to match natural reading order.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="JUnitFourTest.java"
@@ -160,7 +160,7 @@ AssertJ eliminates argument order confusion with its fluent API that always star
 JUnit 4 introduced the `@Rule ExpectedException` to test for exceptions, which was an improvement over try/catch blocks.
 However, it's disconnected from the code that throws the exception and can lead to confusing test logic.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="JUnitFourTest.java"

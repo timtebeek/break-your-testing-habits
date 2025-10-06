@@ -10,7 +10,7 @@ Custom assertions provide fluent APIs tailored to your domain, reducing boilerpl
 
 Instead of repeatedly extracting properties and asserting on them, create custom assertion classes.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="BookTest.java"
@@ -132,7 +132,7 @@ Custom assertions provide:
 
 Custom assertions can provide convenience methods for common assertion patterns.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="BookTest.java"
@@ -232,7 +232,7 @@ The methods return `myself` (the assertion instance) to allow method chaining.
 
 Custom assertions work seamlessly with collection assertions using `map()` and `allSatisfy()`.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="BundleTest.java"
@@ -294,7 +294,7 @@ This allows you to use the same fluent API for individual objects and collection
 
 Custom assertions can be used with `satisfies()` to verify multiple conditions on an object.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="BookTest.java"

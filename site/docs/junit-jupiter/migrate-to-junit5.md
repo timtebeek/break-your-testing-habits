@@ -10,7 +10,7 @@ Migrating from JUnit 4 to JUnit 5 involves updating imports, annotations, and ta
 
 JUnit 5 uses different package names and imports compared to JUnit 4.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="CalculatorTest.java"
@@ -134,7 +134,7 @@ JUnit 5 uses `org.junit.jupiter.api.*` packages, allows package-private visibili
 
 JUnit 5 introduces `assertThrows()` to replace the awkward `@Test(expected=...)` pattern from JUnit 4.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="ExceptionTest.java"

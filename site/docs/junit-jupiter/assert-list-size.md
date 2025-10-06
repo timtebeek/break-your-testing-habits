@@ -10,7 +10,7 @@ AssertJ provides more expressive and less error-prone alternatives.
 
 Checking for null before checking collection size is redundant, as a null collection would fail the size check anyway.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="AssertListSize.java"
@@ -73,7 +73,7 @@ AssertJ's `hasSize()` is concise, expressive, and will appropriately handle null
 
 Using JUnit's `assertEquals()` with the actual and expected values swapped leads to confusing error messages.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="AssertListSize.java"

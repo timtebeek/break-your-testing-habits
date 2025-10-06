@@ -11,7 +11,7 @@ Tests must extend `TestCase`, method names must start with `test`, and the asser
 JUnit 3 only provides basic assertions like `assertTrue`, `assertFalse`, `assertEquals`, and `assertNotNull`.
 This makes tests verbose and harder to understand, especially when they fail.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="JUnitThreeTest.java"
@@ -88,7 +88,7 @@ Modern testing frameworks like JUnit 5 use annotations instead of naming convent
 Overuse of `assertTrue` and `assertFalse` with complex conditions makes it hard to understand what is being tested.
 When tests fail, the error messages are not helpful.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="JUnitThreeTest.java"
@@ -153,7 +153,7 @@ AssertJ provides dedicated assertion methods that produce clear, informative fai
 JUnit 3 uses the opposite argument order compared to modern frameworks, with the expected value first and actual value second.
 This can lead to confusing error messages and incorrectly passing tests.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="JUnitThreeTest.java"

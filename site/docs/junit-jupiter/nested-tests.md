@@ -11,7 +11,7 @@ However, nested classes without the `@Nested` annotation are silently ignored, w
 Inner classes in JUnit Jupiter test classes are not automatically recognized as test classes.
 They must be annotated with `@Nested` or the tests inside them will be silently skipped.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="JUnitJupiterTest.java"
@@ -83,7 +83,7 @@ Nested classes are useful for grouping related tests and sharing setup code via 
 
 Nested test classes help organize related test scenarios and provide better test report structure.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="CalculatorTest.java"

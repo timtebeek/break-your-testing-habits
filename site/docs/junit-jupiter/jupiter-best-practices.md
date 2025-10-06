@@ -10,7 +10,7 @@ After migrating to JUnit 5, there are several common patterns that should be cle
 In JUnit 3, test methods had to start with `test` because the framework used reflection to discover tests by name.
 JUnit 4 and 5 use annotations, so this prefix is no longer necessary and just adds noise.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="CalculatorTest.java"
@@ -84,7 +84,7 @@ Removing the `test` prefix makes method names cleaner and more readable. The `@T
 JUnit 4 required test classes and methods to be public, but JUnit 5 removed this requirement.
 Package-private (default) visibility is sufficient and reduces boilerplate.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="CalculatorTest.java"
@@ -164,7 +164,7 @@ Only keep `public` if you need the test class to be accessible from other packag
 
 Beyond basic cleanup, there are many other best practices to apply when modernizing tests.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="UserServiceTest.java"

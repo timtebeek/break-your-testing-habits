@@ -10,7 +10,7 @@ JUnit 6 was released in 2025. The main change is a baseline requirement of Java 
 JUnit 6 requires Java 17 as a minimum, dropping support for Java 8, 11, and earlier versions.
 This impacts conditional test execution based on Java versions.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="ConditionalTest.java"
@@ -101,7 +101,7 @@ After migrating to JUnit 6:
 
 Tests that were disabled on old Java versions can now be unconditionally enabled.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="ModernFeatureTest.java"

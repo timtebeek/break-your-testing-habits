@@ -10,7 +10,7 @@ AssertJ provides a generator that can automatically create custom assertion clas
 
 Creating custom assertions by hand requires significant boilerplate code.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="BookAssert.java"
@@ -128,7 +128,7 @@ The assertion generator:
 
 Generated assertions work exactly like hand-written ones but with less effort.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="BookTest.java"
@@ -255,7 +255,7 @@ AssertJ provides an [online assertion generator](https://joel-costigliola.github
 
 ## Best practices
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="BookTest.java"

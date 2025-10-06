@@ -11,7 +11,7 @@ They make working with multi-line strings much more readable, but traditional st
 Traditional string concatenation with `+` operators for multi-line strings is hard to read and maintain.
 Each line needs explicit `\n` newline characters and quote escaping.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="TextBlockTest.java"
@@ -88,7 +88,7 @@ Text blocks make multi-line strings much more readable. The content is exactly a
 
 While text blocks improve readability, AssertJ can make multi-line string comparisons even clearer with better diff output.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="TextBlockTest.java"

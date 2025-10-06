@@ -12,7 +12,7 @@ The matcher-based approach requires many static imports, has less discoverable A
 Hamcrest requires composing matchers with `is()`, `not()`, and `nullValue()` to express simple assertions.
 This leads to verbose, nested calls that are harder to read than fluent assertions.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="HamcrestTest.java"
@@ -93,7 +93,7 @@ IDE autocomplete makes it easy to discover available assertions without memorizi
 Hamcrest matchers like `contains()` and `hasItem()` have subtle differences that are easy to get wrong.
 `contains()` checks for exact order and completeness, while `hasItem()` checks for presence of a single item.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="HamcrestTest.java"
@@ -173,7 +173,7 @@ The semantics are clearer and less prone to mistakes.
 Hamcrest's matcher-based approach requires knowing which static imports to use and how to compose them.
 Without IDE autocomplete support, it's difficult to discover what matchers are available and how to use them.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="HamcrestTest.java"

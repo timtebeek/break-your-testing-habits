@@ -10,7 +10,7 @@ Soft assertions allow you to collect multiple assertion failures and report them
 
 Standard assertions stop at the first failure, hiding subsequent problems.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="BookTest.java"
@@ -77,7 +77,7 @@ You'll see all three failures in a single test run, making it faster to identify
 
 For domain objects that are tested frequently, you can create custom soft assertion classes to make tests more readable and reusable.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="BookTest.java"
@@ -175,7 +175,7 @@ The `AutoCloseableSoftAssertions` base class automatically verifies all assertio
 
 When soft assertions fail, all failures are collected and reported together.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="BookTest.java"

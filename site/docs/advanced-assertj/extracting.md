@@ -10,7 +10,7 @@ AssertJ's `extracting()` method provides a clean way to pull out properties and 
 
 Extract a single property from all elements in a collection for verification.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="BundleTest.java"
@@ -88,7 +88,7 @@ AssertJ's `extracting()` is more concise and keeps the extraction and assertion 
 
 Extract multiple properties from all elements for comprehensive verification.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="BundleTest.java"
@@ -160,7 +160,7 @@ Use `first()`, `last()`, or `element(index)` to focus on specific elements.
 
 When verifying multiple properties across all collection elements, extraction helps create clear assertions.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="BundleTest.java"
@@ -239,7 +239,7 @@ Extracting properties from all elements and using `tuple()` creates a clear, dec
 
 When properties themselves are collections, use `flatExtracting()` to flatten nested collections.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="BundleTest.java"
