@@ -159,6 +159,23 @@ dependencies {
 2. Run `gradle rewriteRun` to run the recipe.
 
 </TabItem>
+<TabItem value="intelliJ" label="IntelliJ IDEA Ultimate">
+
+You can run OpenRewrite recipes directly from IntelliJ IDEA Ultimate, by adding a `rewrite.yml` file to your project.
+
+```yaml title="rewrite.yml"
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: com.github.timtebeek.AdoptAssertJ
+displayName: Adopt AssertJ
+description: Adopt AssertJ and apply best practices to assertions.
+recipeList:
+  - org.openrewrite.java.testing.assertj.Assert
+```
+
+After adding the file, you should see a run icon in the left margin offering to run the recipe.
+
+</TabItem>
 </Tabs>
 
 ## Exercise A
