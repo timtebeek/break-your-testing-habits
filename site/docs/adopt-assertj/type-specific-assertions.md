@@ -199,7 +199,7 @@ class DateAssertions {
         assertThat(now)
                 .isAfter(LocalDateTime.now().minusDays(1))
                 .isBefore(LocalDateTime.now().plusDays(1))
-                .isInSameYearAs(today);
+                .hasYear(today.getYear());
 
         assertThat(today)
                 .hasYear(2025)
@@ -406,8 +406,8 @@ class FileContentAssertions {
                 .contains("ERROR");
 
         assertThat(logFile)
-                .hasContent("expected content")  // exact match
-                .usingCharset("UTF-8");
+                .usingCharset("UTF-8")
+                .hasContent("expected content");  // exact match;
     }
 }
 ```
