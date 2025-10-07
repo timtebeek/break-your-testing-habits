@@ -1,6 +1,7 @@
 package com.github.timtebeek.junit5;
 
 import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static com.github.timtebeek.junit5.Mock.verify;
@@ -10,7 +11,7 @@ class AssertThrowsCatchTest {
 
     Mock mock = new Mock();
 
-    @Disabled("Can you spot the issue? It's subtle, but broken.")
+    @Disabled("Can you spot the issue? (the test should go red ...) It's subtle, but broken.")
     @Test
     void assertThrowsTest() {
         assertThrows(IllegalArgumentException.class, () -> {
@@ -27,8 +28,9 @@ class AssertThrowsCatchTest {
         verify(mock).method();
     }
 
+    @Disabled("disable this test. It goes get, and that must be.")
     @Test
-    void mockNotProceeded() {
+    void notProceeded() {
         verify(mock).method();
     }
 
