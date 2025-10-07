@@ -159,10 +159,10 @@ class BookTest {
 :::tip
 
 Custom soft assertion classes provide:
-- Named property accessors for better readability
-- Automatic descriptions for each property
-- Reusability across multiple tests
-- Try-with-resources for automatic assertion verification
+- Named property accessors for better readability.
+- Automatic descriptions for each property.
+- Reusability across multiple tests.
+- Try-with-resources for automatic assertion verification.
 
 The `AutoCloseableSoftAssertions` base class automatically verifies all assertions when the try block exits.
 

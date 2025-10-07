@@ -118,10 +118,10 @@ class BookTest {
 :::tip
 
 Custom assertions provide:
-- Named property accessors for better readability
-- Automatic property descriptions in failure messages
-- Fluent API that works with `assertThat()`
-- Reusability across all tests
+- Named property accessors for better readability.
+- Automatic property descriptions in failure messages.
+- Fluent API that works with `assertThat()`.
+- Reusability across all tests.
 
 :::
 

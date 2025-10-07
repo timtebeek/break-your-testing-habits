@@ -226,9 +226,9 @@ class BundleTest {
 :::tip
 
 Extracting properties from all elements and using `tuple()` creates a clear, declarative assertion that:
-- Verifies all elements at once
-- Shows all failures together if there are multiple issues
-- Is more concise and readable than loops
+- Verifies all elements at once.
+- Shows all failures together if there are multiple issues.
+- Is more concise and readable than loops.
 
 :::
 
@@ -301,7 +301,7 @@ class BundleTest {
 :::tip
 
 `flatExtracting()` is like `extracting()` followed by flattening nested collections.
-It's useful when each element contains a collection and you want to assert on all values across all elements.
+It's useful when each element contains a collection, and you want to assert on all values across all elements.
 
 :::
 

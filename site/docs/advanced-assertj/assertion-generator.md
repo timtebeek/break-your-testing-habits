@@ -126,7 +126,7 @@ The assertion generator:
 
 ## Using generated assertions
 
-Generated assertions work exactly like hand-written ones but with less effort.
+Generated assertions work exactly like handwritten ones but with less effort.
 
 <Tabs>
 <TabItem value="before" label="Before">
