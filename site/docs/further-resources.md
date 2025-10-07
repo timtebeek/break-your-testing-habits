@@ -16,7 +16,6 @@ Here are some additional resources to help you learn more about the topics cover
 - [Moderne Documentation](https://docs.moderne.io/): Comprehensive guides and references for using Moderne, to scale up your efforts.
 - [OpenRewrite Documentation](https://docs.openrewrite.org/): Official documentation for OpenRewrite, including recipes and usage instructions.
 - [Picnic's Error Prone Support](https://error-prone.picnic.tech/): Information on using Error Prone for static analysis in Java.
-- [Error Prone Support on GitHub](https://github.com/PicnicSupermarket/error-prone-support): The GitHub repository of Error Prone Support.
 
 ## Community and Support
 - [Monthly OpenRewrite training sessions](https://www.moderne.ai/moderne-openrewrite-training-hub): Sign up for free training sessions to learn more about OpenRewrite and Moderne.
