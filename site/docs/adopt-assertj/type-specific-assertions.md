@@ -203,7 +203,7 @@ class DateAssertions {
 
         assertThat(today)
                 .hasYear(2025)
-                .isInTheFuture()  // relative to comparison date
+                .isToday()
                 .isBetween(LocalDate.of(2025, 1, 1), LocalDate.of(2025, 12, 31));
     }
 }
