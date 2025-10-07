@@ -12,7 +12,7 @@ Chained assertions allow you to group multiple assertions on the same object int
 
 ## Limited expressiveness
 
-JUnit 3 only provides basic assertions like `assertTrue`, `assertFalse`, `assertEquals`, and `assertNotNull`.
+JUnit 3, 4, 5 and 6 only provides basic assertions like `assertTrue`, `assertFalse`, `assertEquals`, and `assertNotNull`.
 This makes tests verbose and harder to understand, especially when they fail.
 
 <Tabs>
@@ -39,8 +39,7 @@ class ChainedAssertJTest {
 
 :::warning
 
-JUnit 3 tests require extending `TestCase`, limiting inheritance, and test methods must be public and start with `test`.
-The limited assertion library makes tests verbose and less readable.
+The long list of assertions makes the test longer and harder to read.
 
 :::
 
@@ -73,7 +72,7 @@ class ChainedAssertJTest {
 
 :::tip
 
-Modern testing frameworks like JUnit 5 use annotations instead of naming conventions, don't require extending base classes, and pair well with AssertJ for more expressive assertions.
+Using chained assertions makes the test more fluent and easier to read.
 
 :::
 
