@@ -41,7 +41,7 @@ mod config recipes jar install org.openrewrite.recipe:rewrite-testing-frameworks
 
 3. Run the recipe.
 ```shell title="shell"
-mod run ~/workspace/ --recipe org.openrewrite.java.testing.assertj.Assert
+mod run ~/workspace/ --recipe org.openrewrite.java.testing.assertj.Assertj
 ```
 
 </TabItem>
@@ -50,7 +50,7 @@ mod run ~/workspace/ --recipe org.openrewrite.java.testing.assertj.Assert
 You will need to have [Maven](https://maven.apache.org/download.cgi) installed on your machine before you can run the following command.
 
 ```shell title="shell"
-mvn -U org.openrewrite.maven:rewrite-maven-plugin:run -Drewrite.recipeArtifactCoordinates=org.openrewrite.recipe:rewrite-testing-frameworks:RELEASE -Drewrite.activeRecipes=org.openrewrite.java.testing.assertj.Assert -Drewrite.exportDatatables=true
+mvn -U org.openrewrite.maven:rewrite-maven-plugin:run -Drewrite.recipeArtifactCoordinates=org.openrewrite.recipe:rewrite-testing-frameworks:RELEASE -Drewrite.activeRecipes=org.openrewrite.java.testing.assertj.Assertj -Drewrite.exportDatatables=true
 ```
 
 </TabItem>
@@ -71,7 +71,7 @@ You may add the plugin to your `pom.xml` file, so that it is available for all d
         <configuration>
           <exportDatatables>true</exportDatatables>
           <activeRecipes>
-            <recipe>org.openrewrite.java.testing.assertj.Assert</recipe>
+            <recipe>org.openrewrite.java.testing.assertj.Assertj</recipe>
           </activeRecipes>
         </configuration>
         <dependencies>
@@ -112,7 +112,7 @@ rootProject {
         rewrite("org.openrewrite.recipe:rewrite-testing-frameworks:latest.release")
     }
     rewrite {
-        activeRecipe("org.openrewrite.java.testing.assertj.Assert")
+        activeRecipe("org.openrewrite.java.testing.assertj.Assertj")
         setExportDatatables(true)
     }
     afterEvaluate {
@@ -144,7 +144,7 @@ plugins {
 }
 
 rewrite {
-    activeRecipe("org.openrewrite.java.testing.assertj.Assert")
+    activeRecipe("org.openrewrite.java.testing.assertj.Assertj")
     setExportDatatables(true)
 }
 
@@ -171,7 +171,7 @@ name: com.github.timtebeek.AdoptAssertJ
 displayName: Adopt AssertJ
 description: Adopt AssertJ and apply best practices to assertions.
 recipeList:
-  - org.openrewrite.java.testing.assertj.Assert
+  - org.openrewrite.java.testing.assertj.Assertj
 ```
 
 After adding the file, you should see a run icon in the left margin offering to run the recipe.
