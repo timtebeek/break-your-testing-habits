@@ -171,6 +171,7 @@ The OpenRewrite [UpgradeToJava21](https://docs.openrewrite.org/reference/recipes
 
 In this case we're going to look at upgrading just the tests to Java 21; not yet upgrading the main source code.
 This split in the Java version used for `src/main` and `src/test` is possible with both Maven and Gradle.
+With Maven, you can set the `maven.compiler.testRelease` property to 21 in the `maven-compiler-plugin` configuration.
 
 We find starting out with newer Java versions in tests only is often a good way to start adoption.
 Developers can start writing new tests and updating existing tests using the latest Java features,

@@ -1,8 +1,14 @@
+---
+sidebar_position: 8
+---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 # AssertThrows verify
 
+Sometimes tests aren't quite as they seem. This is one of those cases.
+Can you spot the issue?
 
 <Tabs>
 <TabItem value="before" label="Before">
@@ -34,6 +40,9 @@ class AssertThrowsCatchTest {
 
 ```
 
+<details>
+<summary>Solution</summary>
+
 :::warning
 
 Using `assertThrows` with multiple statements can lead to misleading test results, as only the first statement that throws an exception is evaluated.
@@ -41,6 +50,8 @@ Subsequent statements, such as verifications, may not be executed, potentially c
 It's better to separate the exception assertion from other verifications to ensure all intended checks are performed.
 
 :::
+
+</details>
 
 </TabItem>
 <TabItem value="after" label="After">
