@@ -1,3 +1,7 @@
+---
+sidebar_position: 8
+---
+
 # Further resources
 
 Here are some additional resources to help you learn more about the topics covered in this workshop:

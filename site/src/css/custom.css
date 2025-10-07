@@ -28,3 +28,21 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Make the active section in the right sidebar (TOC) more visible with green color */
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary) !important;
+  font-weight: 600 !important;
+  border-left: 3px solid var(--ifm-color-primary) !important;
+  padding-left: calc(var(--ifm-toc-padding-horizontal) - 3px) !important;
+}
+
+.table-of-contents__link--active code {
+  color: var(--ifm-color-primary) !important;
+  font-weight: 600 !important;
+}
+
+/* Add hover effect for better interactivity */
+.table-of-contents__link:hover {
+  color: var(--ifm-color-primary-dark) !important;
+}

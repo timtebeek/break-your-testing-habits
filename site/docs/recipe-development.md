@@ -1,3 +1,7 @@
+---
+sidebar_position: 7
+---
+
 # Recipe development
 
 Automated code migrations are implemented using a combination of **Error Prone Refaster** rules and **OpenRewrite** recipes.
@@ -7,9 +11,9 @@ This hybrid approach provides both the expressiveness of pattern matching and th
 
 The migration framework consists of three main components:
 
-1. **Refaster Rules** - Define before/after code patterns using Google's Error Prone Refaster
-2. **OpenRewrite Recipes** - Auto-generated from Refaster templates to perform actual transformations
-3. **Recipe Tests** - Verify transformations work correctly on real code examples
+1. **Refaster Rules** - Define before/after code patterns using Google's Error Prone Refaster.
+2. **OpenRewrite Recipes** - Auto-generated from Refaster templates to perform actual transformations.
+3. **Recipe Tests** - Verify transformations work correctly on real code examples.
 
 ## Project Structure
 
