@@ -1,7 +1,7 @@
 ---
-sidebar_position: 2
+sidebar_position: 5
 ---
-# Enforce usage
+# Encourage usage
 
 After you've migrated to AssertJ once, you'll want to ensure that all new tests also use AssertJ.
 On top of that you'll want to nudge your team to use the most idiomatic AssertJ assertions available.
