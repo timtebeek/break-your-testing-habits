@@ -8,6 +8,7 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.assertj.core.api.InstanceOfAssertFactories.LIST;
 
 class AssertJTest {
 
@@ -30,20 +31,32 @@ class AssertJTest {
 
         // Repeated assertions on the same object
         assertThat(books)
-                .isNotNull()
-                .hasSize(3)
-                .contains(new Book("Effective Java", "Joshua Bloch", 2001))
-                .contains(new Book("Java Concurrency in Practice", "Brian Goetz", 2006))
-                .contains(new Book("Clean Code", "Robert C. Martin", 2008))
-                .doesNotContain(new Book("Java 8 in Action", "Raoul-Gabriel Urma", 2014));
+          .isNotNull()
+          .hasSize(3)
+          .contains(new Book("Effective Java", "Joshua Bloch", 2001))
+          .contains(new Book("Java Concurrency in Practice", "Brian Goetz", 2006))
+          .contains(new Book("Clean Code", "Robert C. Martin", 2008))
+          .doesNotContain(new Book("Java 8 in Action", "Raoul-Gabriel Urma", 2014));
 
         // Extracting and asserting on a property of an object in a collection
         assertThat(books)
-                .extracting(Book::getTitle)
-                .containsExactly(
-                        "Effective Java",
-                        "Java Concurrency in Practice",
-                        "Clean Code");
+          .extracting(Book::getTitle)
+          .containsExactly(
+            "Effective Java",
+            "Java Concurrency in Practice",
+            "Clean Code");
+    }
+
+    @Test
+    void extractingThenChaining() {
+        assertThat(new Bundle())
+          .isNotNull()
+          .extracting(Bundle::getBooks)
+          .asInstanceOf(LIST)
+          .containsExactly(
+            new Book("Effective Java", "Joshua Bloch", 2001),
+            new Book("Java Concurrency in Practice", "Brian Goetz", 2006),
+            new Book("Clean Code", "Robert C. Martin", 2008));
     }
 
     // `assertThatThrownBy` does not yet retain last statement only
@@ -54,8 +67,8 @@ class AssertJTest {
             assertThat(i).isEqualTo(3);
             boom();
         })
-                .isInstanceOf(IllegalArgumentException.class)
-                .hasMessage("boom!");
+          .isInstanceOf(IllegalArgumentException.class)
+          .hasMessage("boom!");
     }
 
     private void boom() {
@@ -69,8 +82,8 @@ class AssertJTest {
 
         // Compare all fields except 'year'
         assertThat(hardcover)
-                .usingRecursiveComparison()
-                .ignoringFields("year")
-                .isEqualTo(paperback);
+          .usingRecursiveComparison()
+          .ignoringFields("year")
+          .isEqualTo(paperback);
     }
 }

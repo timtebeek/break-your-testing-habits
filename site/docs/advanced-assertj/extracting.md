@@ -311,3 +311,37 @@ It's useful when each element contains a collection, and you want to assert on a
 
 </TabItem>
 </Tabs>
+
+## Extracting and chaining
+
+When you need to make assertions on a property of an object, you can use `extracting` to extract the property and then chain assertions on it.
+Sometimes, you may need to specify the type of the extracted property to use the appropriate assertions.
+
+```java title="ExtractThenChainTest.java"
+import org.junit.jupiter.api.Test;
+
+import java.util.List;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.InstanceOfAssertFactories.LIST;
+
+class ExtractThenChainTest {
+    @Test
+    void extractingThenChaining() {
+        assertThat(new Bundle())
+                .isNotNull()
+                .extracting(Bundle::getBooks)
+                .asInstanceOf(LIST)
+                .containsExactly(
+                        new Book("Effective Java", "Joshua Bloch", 2001),
+                        new Book("Java Concurrency in Practice", "Brian Goetz", 2006),
+                        new Book("Clean Code", "Robert C. Martin", 2008));
+    }
+}
+```
+
+:::tip
+
+The `asInstanceOf` method helps to specify the type of the extracted property, enabling you to use the appropriate assertions for that type.
+
+:::
