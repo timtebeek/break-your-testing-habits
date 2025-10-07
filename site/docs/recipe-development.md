@@ -58,10 +58,10 @@ static class AssertThatIsNull {
 
 ### Key Annotations
 
-- **`@RecipeDescriptor`** - Provides recipe name and description for documentation
-- **`@BeforeTemplate`** - Defines the pattern to match in existing code
-- **`@AfterTemplate`** - Defines the replacement code
-- **`@UseImportPolicy`** - Controls how imports are added (`STATIC_IMPORT_ALWAYS`, `IMPORT_CLASS_DIRECTLY`, etc.)
+- **`@RecipeDescriptor`** - Provides recipe name and description for documentation.
+- **`@BeforeTemplate`** - Defines the pattern to match in existing code.
+- **`@AfterTemplate`** - Defines the replacement code.
+- **`@UseImportPolicy`** - Controls how imports are added (`STATIC_IMPORT_ALWAYS`, `IMPORT_CLASS_DIRECTLY`, etc.).
 
 ### Template Compilation
 
@@ -72,9 +72,9 @@ mvn clean compile
 # Generates: recipes/target/generated-sources/annotations/com/github/timtebeek/recipes/AssertToAssertThatRecipes.java
 ```
 
-The generated class contains one `Recipe` for each Refaster template.
+The generated class contains one `Recipe` for each Refaster rule.
 
-## Writing Refaster Templates
+## Writing Refaster Rules
 
 ### Basic Pattern Matching
 
@@ -397,7 +397,7 @@ void assertNotNull() {
 
 ### Exercise 2: Assert Not Null with Message
 
-Complete the `AssertThatIsNotNullWithMessage` template:
+Complete the `AssertThatIsNotNullWithMessage` rule:
 
 **Goal:** Convert `assert actual != null : "message";` to `assertThat(actual).as("message").isNotNull();`
 
@@ -422,7 +422,7 @@ static class AssertThatIsNotNullWithMessage {
 
 ### Exercise 3: Assert Equals
 
-Complete the `AssertThatIsEqualTo` template:
+Complete the `AssertThatIsEqualTo` rule:
 
 **Goal:** Convert `assert actual.equals(expected);` to `assertThat(actual).isEqualTo(expected);`
 
@@ -449,7 +449,7 @@ static class AssertThatIsEqualTo {
 
 ### Exercise 4: Assert Equals with Message
 
-Complete the `AssertThatIsEqualToWithMessage` template:
+Complete the `AssertThatIsEqualToWithMessage` rule:
 
 **Goal:** Convert `assert actual.equals(expected) : "message";` to `assertThat(actual).as("message").isEqualTo(expected);`
 
@@ -474,7 +474,7 @@ static class AssertThatIsEqualToWithMessage {
 
 ### Exercise 5: Assert Not Equals
 
-Complete the `AssertThatIsNotEqualTo` and `AssertThatIsNotEqualToWithMessage` templates:
+Complete the `AssertThatIsNotEqualTo` and `AssertThatIsNotEqualToWithMessage` rules:
 
 **Goal:**
 - Convert `assert !actual.equals(expected);` to `assertThat(actual).isNotEqualTo(expected);`
@@ -514,7 +514,7 @@ static class AssertThatIsNotEqualToWithMessage {
 
 ### Exercise 6: Assert Same As
 
-Complete the remaining templates for reference equality:
+Complete the remaining rules for reference equality:
 
 **Goal:**
 - Convert `assert actual == expected;` (reference equality) to `assertThat(actual).isSameAs(expected);`
@@ -599,10 +599,10 @@ assertThat(str).isNotNull().isEqualTo("Foo")
 
 ## Resources
 
-- [OpenRewrite Documentation](https://docs.openrewrite.org/)
-- [Refaster User Guide](https://errorprone.info/docs/refaster)
-- [OpenRewrite Recipe Development](https://docs.openrewrite.org/authoring-recipes)
-- [AssertJ Documentation](https://assertj.github.io/doc/)
+- [OpenRewrite Documentation](https://docs.openrewrite.org/).
+- [Refaster User Guide](https://errorprone.info/docs/refaster).
+- [OpenRewrite Recipe Development](https://docs.openrewrite.org/authoring-recipes).
+- [AssertJ Documentation](https://assertj.github.io/doc/).
 
 ## Next Steps
 
