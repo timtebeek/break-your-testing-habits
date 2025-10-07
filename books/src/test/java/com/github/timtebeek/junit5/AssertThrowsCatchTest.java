@@ -19,6 +19,19 @@ class AssertThrowsCatchTest {
         });
     }
 
+
+    @Test
+    void mockProceeded() {
+        mock.method();
+
+        verify(mock).method();
+    }
+
+    @Test
+    void mockNotProceeded() {
+        verify(mock).method();
+    }
+
     private void boom() {
         throw new IllegalArgumentException("boom!");
     }
