@@ -103,6 +103,10 @@ const config = {
                   href: 'https://docs.moderne.io/',
               },
               {
+                  label: 'Picnic',
+                  href: 'https://picnic.app/',
+              },
+              {
                   label: 'Error Prone Support',
                   href: 'https://error-prone.picnic.tech/refasterrules/AssertJArrayRules/',
               },
@@ -120,6 +124,10 @@ const config = {
                     href: 'https://bsky.app/profile/did:plc:vnhmeu5qj3w4rdoagg4pan7g',
                 },
                 {
+                    label: 'Picnic Technologies',
+                    href: 'https://www.linkedin.com/company/picnictechnologies',
+                },
+                {
                     label: 'Tim',
                     href: 'https://bsky.app/profile/timtebeek.github.io',
                 },
@@ -130,7 +138,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Moderne, Inc.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Moderne, Inc. & Picnic Technologies`,
       },
       prism: {
         theme: prismThemes.github,
