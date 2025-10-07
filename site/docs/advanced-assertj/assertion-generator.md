@@ -182,10 +182,10 @@ class BookTest {
 :::tip
 
 Generated assertions provide:
-- Domain-specific fluent API
-- Better readability
-- Automatic updates when domain changes
-- All the benefits of custom assertions with none of the manual work
+- Domain-specific fluent API.
+- Better readability.
+- Automatic updates when domain changes.
+- All the benefits of custom assertions with none of the manual work.
 
 :::
 
@@ -231,11 +231,11 @@ The generator supports various configuration options to customize the generated 
 :::info
 
 Configuration options:
-- `packages` - Generate for all classes in specified packages
-- `classes` - Generate for specific classes only
-- `targetDir` - Where to output generated files
-- `entryPointClassPackage` - Generate a single entry point with all `assertThat()` methods
-- `excludes` - Regex patterns for fields/methods to skip
+- `packages` - Generate for all classes in specified packages.
+- `classes` - Generate for specific classes only.
+- `targetDir` - Where to output generated files.
+- `entryPointClassPackage` - Generate a single entry point with all `assertThat()` methods.
+- `excludes` - Regex patterns for fields/methods to skip.
 
 :::
 
@@ -246,10 +246,10 @@ For quick experimentation or one-off generation, use the online generator.
 :::tip
 
 AssertJ provides an [online assertion generator](https://joel-costigliola.github.io/assertj/assertj-assertions-generator.html) where you can:
-- Paste your class code
-- Generate custom assertions in your browser
-- Copy the generated code to your project
-- Useful for quick prototyping or when you can't use the Maven plugin
+- Paste your class code.
+- Generate custom assertions in your browser.
+- Copy the generated code to your project.
+- Useful for quick prototyping or when you can't use the Maven plugin.
 
 :::
 
@@ -298,11 +298,11 @@ class BookTest {
 :::tip
 
 Best practices for generated assertions:
-- Configure an entry point class package to provide a single import
-- Keep generated code in `target/` and regenerate as needed
-- Run generation as part of your build process
-- Use for frequently-tested domain objects
-- Combine with soft assertions for comprehensive testing
+- Configure an entry point class package to provide a single import.
+- Keep generated code in `target/` and regenerate as needed.
+- Run generation as part of your build process.
+- Use for frequently-tested domain objects.
+- Combine with soft assertions for comprehensive testing.
 
 :::
 

@@ -1,13 +1,13 @@
 # Recipe development
 
-Automated code migrations are implemented using a combination of **Error Prone Refaster** templates and **OpenRewrite** recipes.
+Automated code migrations are implemented using a combination of **Error Prone Refaster** rules and **OpenRewrite** recipes.
 This hybrid approach provides both the expressiveness of pattern matching and the powerful refactoring capabilities of OpenRewrite.
 
 ## Architecture
 
 The migration framework consists of three main components:
 
-1. **Refaster Templates** - Define before/after code patterns using Google's Error Prone Refaster
+1. **Refaster Rules** - Define before/after code patterns using Google's Error Prone Refaster
 2. **OpenRewrite Recipes** - Auto-generated from Refaster templates to perform actual transformations
 3. **Recipe Tests** - Verify transformations work correctly on real code examples
 
@@ -29,9 +29,9 @@ recipes/
         └── AssertToAssertThatTest.java       # Recipe tests
 ```
 
-## How Refaster Templates Work
+## How Refaster Rules Work
 
-Refaster templates define code transformations using a simple before/after pattern:
+Refaster rules define code transformations using a simple before/after pattern:
 
 ```java
 @RecipeDescriptor(
@@ -61,7 +61,7 @@ static class AssertThatIsNull {
 
 ### Template Compilation
 
-When you compile the project, the `rewrite-templating` annotation processor automatically generates OpenRewrite recipes from your Refaster templates:
+When you compile the project, the `rewrite-templating` annotation processor automatically generates OpenRewrite recipes from your Refaster rules:
 
 ```bash
 mvn clean compile
@@ -185,18 +185,18 @@ class AssertToAssertThatTest implements RewriteTest {
 
 ### Test Structure
 
-1. **Before code** - First string argument shows the original code
-2. **After code** - Second string argument shows the expected result
-3. **Imports** - OpenRewrite automatically adds necessary imports
-4. **Formatting** - Indentation and whitespace are preserved
+1. **Before code** - First string argument shows the original code.
+2. **After code** - Second string argument shows the expected result.
+3. **Imports** - OpenRewrite automatically adds necessary imports.
+4. **Formatting** - Indentation and whitespace are preserved.
 
 ### Best Practices for Tests
 
-- Include one test per template to verify it works
-- Use `@DocumentExample` on the most representative test
-- Test edge cases (null messages, complex expressions, etc.)
-- Verify imports are added correctly
-- Test that the transformation doesn't break valid code
+- Include one test per template to verify it works.
+- Use `@DocumentExample` on the most representative test.
+- Test edge cases (null messages, complex expressions, etc.).
+- Verify imports are added correctly.
+- Test that the transformation doesn't break valid code.
 
 ## Recipe Composition
 
@@ -218,9 +218,9 @@ recipeList:
 
 Preconditions ensure recipes only run in appropriate contexts:
 
-- `org.openrewrite.java.search.IsLikelyTest` - Only transform test files
-- `org.openrewrite.java.search.FindMethods` - Only transform specific methods
-- Custom preconditions - Create your own filters
+- `org.openrewrite.java.search.IsLikelyTest` - Only transform test files.
+- `org.openrewrite.java.search.FindMethods` - Only transform specific methods.
+- Custom preconditions - Create your own filters.
 
 ## Development Workflow
 
@@ -340,10 +340,10 @@ Complete the `AssertThatIsNotNull` template in `AssertToAssertThat.java`:
 **Goal:** Convert `assert actual != null;` to `assertThat(actual).isNotNull();`
 
 **Steps:**
-1. Add the `@BeforeTemplate` annotation and method
-2. Add the `@AfterTemplate` annotation and method
-3. Add appropriate import policy
-4. Write a test in `AssertToAssertThatTest.java`
+1. Add the `@BeforeTemplate` annotation and method.
+2. Add the `@AfterTemplate` annotation and method.
+3. Add appropriate import policy.
+4. Write a test in `AssertToAssertThatTest.java`.
 
 <details>
 <summary>Solution</summary>
@@ -604,8 +604,8 @@ assertThat(str).isNotNull().isEqualTo("Foo")
 
 After completing the exercises:
 
-1. Run `mvn clean compile` to generate recipes
-2. Run `mvn test` to verify all tests pass
-3. Try applying your recipes to the `books` module
-4. Experiment with more complex transformation patterns
+1. Run `mvn clean compile` to generate recipes.
+2. Run `mvn test` to verify all tests pass.
+3. Try applying your recipes to the `books` module.
+4. Experiment with more complex transformation patterns.
 5. Share your recipes with the community!

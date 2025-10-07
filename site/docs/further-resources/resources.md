@@ -1,6 +1,6 @@
 # Further resources
 
-Here are some additional resources to help you learn more about the topics covered in this documentation:
+Here are some additional resources to help you learn more about the topics covered in this workshop:
 
 ## Documentation on AssertJ and JUnit 6
 - [AssertJ Documentation](https://assertj.github.io/doc/): Detailed information on using AssertJ for fluent assertions in Java.
