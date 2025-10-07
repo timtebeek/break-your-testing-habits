@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Recursive comparison
 
 The recursive comparison feature of AssertJ allows you to compare complex objects by recursively comparing their fields.
