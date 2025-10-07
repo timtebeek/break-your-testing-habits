@@ -7,6 +7,7 @@ import TabItem from '@theme/TabItem';
 # Migrate to AssertJ
 
 You can easily convert existing assertions to use [AssertJ](https://assertj.github.io/doc/) using OpenRewrite's [AssertJ recipe](https://docs.openrewrite.org/recipes/java/testing/assertj/assertj-best-practices).
+This recipe contains many Refaster rules from [Error Prone Support](https://error-prone.picnic.tech/refasterrules/AssertJStringRules/).
 There are multiple ways to run OpenRewrite recipes on your project, depending on your build tool and preferences.
 
 We recommend the Moderne CLI when interested in running recipes across multiple projects, or when running multiple recipes in succession.

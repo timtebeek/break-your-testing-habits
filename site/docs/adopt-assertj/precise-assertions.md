@@ -4,7 +4,7 @@ sidebar_position: 4
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Exact assertions
+# Precise assertions
 
 While `contains()` verifies that specific elements are present in a collection, it doesn't ensure that *only* those elements exist.
 AssertJ provides exact assertions that verify the complete contents of a collection, ensuring no unexpected elements are present.

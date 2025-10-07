@@ -14,11 +14,10 @@ Automated enforcement of these rules can be done with OpenRewrite and Error Pron
 The Error Prone Support project contains static analysis rules for AssertJ, as well as various other libraries,
 which can hook into Google's Error Prone to provide compile-time checks.
 There's a little bit of [setup required to get it working](https://error-prone.picnic.tech/#-getting-started),
-but once it's in place it will run as part of your build.
+but once it's in place it will run as part of your build, with little impact on build time.
 
 The benefit of compile time checks is that you get immediate feedback in your IDE, and it's near impossible to ignore.
-A drawback is that Error Prone Support only converts statements one to one, does not handle imports or formatting,
-and can not handle larger more structural changes like introducing method chaining.
+A drawback is that Error Prone Support only converts statements one to one, and does not handle formatting.
 
 ## OpenRewrite
 
