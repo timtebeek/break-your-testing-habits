@@ -21,7 +21,7 @@ The recipes are developed in the `recipes/` module:
 
 ```
 recipes/
-├── pom.xml                                    # Maven configuration
+├── pom.xml                                   # Maven configuration
 ├── src/main/java/
 │   └── com/github/timtebeek/recipes/
 │       └── AssertToAssertThat.java           # Refaster templates
@@ -40,7 +40,7 @@ Refaster rules define code transformations using a simple before/after pattern:
 ```java
 @RecipeDescriptor(
     name = "Convert assert to AssertJ",
-    description = "Convert assert statements to AssertJ assertions."
+    description = "Convert `assert` statements to AssertJ assertions."
 )
 static class AssertThatIsNull {
     @BeforeTemplate
@@ -65,7 +65,7 @@ static class AssertThatIsNull {
 
 ### Template Compilation
 
-When you compile the project, the `rewrite-templating` annotation processor automatically generates OpenRewrite recipes from your Refaster rules:
+When you compile the project from the `recipes` directory, the `rewrite-templating` annotation processor automatically generates OpenRewrite recipes from your Refaster rules:
 
 ```bash
 mvn clean compile
@@ -78,7 +78,7 @@ The generated class contains one `Recipe` for each Refaster rule.
 
 ### Basic Pattern Matching
 
-Templates can match various code patterns:
+Refaster templates can match various code patterns:
 
 ```java
 static class AssertThatIsNullWithMessage {
@@ -97,7 +97,7 @@ static class AssertThatIsNullWithMessage {
 
 ### Type Constraints
 
-You can constrain templates to specific types:
+You can constrain templates to match only specific types:
 
 ```java
 static class AssertThatStringIsEmpty {
@@ -116,7 +116,7 @@ static class AssertThatStringIsEmpty {
 
 ### Multiple Overloads
 
-Create separate templates for different method signatures:
+Create separate templates to match different method signatures:
 
 ```java
 // Without message
@@ -150,7 +150,7 @@ static class AssertThatIsNotNullWithMessage {
 
 ## Writing Recipe Tests
 
-Tests use OpenRewrite's testing framework to verify transformations:
+Let's write tests using OpenRewrite's testing framework to verify the transformations we defined:
 
 ```java
 class AssertToAssertThatTest implements RewriteTest {
@@ -160,7 +160,7 @@ class AssertToAssertThatTest implements RewriteTest {
         spec.recipe(new AssertToAssertThatRecipes());
     }
 
-    @DocumentExample  // Shows this test in recipe documentation
+    @DocumentExample  // Shows this test in recipe documentation.
     @Test
     void assertNull() {
         rewriteRun(
@@ -210,7 +210,7 @@ The `rewrite.yml` file allows you to compose recipes and add preconditions:
 ---
 type: specs.openrewrite.org/v1beta/recipe
 name: com.github.timtebeek.AssertToAssertThatRecipesForTests
-displayName: Convert `assert` to `assertThat` in tests
+displayName: Convert `assert` to `assertThat` in tests.
 description: Convert `assert` to `assertThat` in test methods only.
 preconditions:
   - org.openrewrite.java.search.IsLikelyTest
@@ -238,7 +238,7 @@ mvn generate-resources -Ptypetable
 
 This creates `META-INF/rewrite/classpath.tsv.gz` with type information for libraries like AssertJ.
 
-### 2. Write Refaster Templates
+### 2. Write Refaster Rules
 
 Add templates to your Java file:
 
