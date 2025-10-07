@@ -18,7 +18,7 @@ This makes tests verbose and harder to understand, especially when they fail.
 <Tabs>
 <TabItem value="before" label="Before">
 
-```java title="JUnitThreeTest.java"
+```java title="ChainedAssertJTest.java"
 import java.util.List;
 
 class ChainedAssertJTest {
