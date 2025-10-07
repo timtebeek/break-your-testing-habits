@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Break your testing habits',
-  tagline: 'Adopt better testing practices with automated refactoring',
+  tagline: 'Adopt better testing practices with automated refactoring.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
