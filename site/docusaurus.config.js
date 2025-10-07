@@ -138,7 +138,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Moderne, Inc. & Picnic Technologies`,
+        copyright: `Copyright © ${new Date().getFullYear()} Moderne, Inc.`,
       },
       prism: {
         theme: prismThemes.github,
