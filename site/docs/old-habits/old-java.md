@@ -167,7 +167,7 @@ AssertJ provides better diff output for multi-line strings and offers flexible c
 
 ## Automated migration
 
-The OpenRewrite [UpgradeToJava21](https://docs.openrewrite.org/reference/recipes/java/migrate-to-java-21) recipe can automatically convert string concatenation to text blocks in your Java code, as well as upgrade other parts of your application to align with Java 21 best practices, like using `getFirst()` and `getLast()` on sequenced collections.
+The OpenRewrite [UpgradeToJava21](https://docs.openrewrite.org/recipes/java/migrate/upgradetojava21) recipe can automatically convert string concatenation to text blocks in your Java code, as well as upgrade other parts of your application to align with Java 21 best practices, like using `getFirst()` and `getLast()` on sequenced collections.
 
 In this case we're going to look at upgrading just the tests to Java 21; not yet upgrading the main source code.
 This split in the Java version used for `src/main` and `src/test` is possible with both Maven and Gradle.
