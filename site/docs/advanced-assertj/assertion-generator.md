@@ -269,7 +269,7 @@ import static com.github.timtebeek.books.BookAssert.assertThat;  // Conflict!
 
 class BookTest {
     @Test
-    void test() {
+    void assertion() {
         // Which assertThat() is being used?
         assertThat(book).hasTitle("Effective Java");
     }
@@ -291,7 +291,7 @@ import static com.github.timtebeek.assertions.Assertions.assertThat;
 
 class BookTest {
     @Test
-    void test() {
+    void assertion() {
         // Clear which assertThat() is used - the generated entry point
         assertThat(book).hasTitle("Effective Java");
         assertThat(list).hasSize(3);  // Works for all types

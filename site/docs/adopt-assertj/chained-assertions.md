@@ -56,7 +56,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class ChainedAssertJTest {
 
     @Test
-    void testBundle() {
+    void bundle() {
         List<Book> books = new Bundle().getBooks();
 
         assertThat(books)

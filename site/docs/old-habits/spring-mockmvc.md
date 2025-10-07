@@ -267,7 +267,7 @@ Status assertions are more semantic and expressive with `MockMvcTester`.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @Test
-void testStatusCodes() throws Exception {
+void statusCodes() throws Exception {
     mockMvc.perform(get("/ok")).andExpect(status().isOk());
     mockMvc.perform(get("/created")).andExpect(status().isCreated());
     mockMvc.perform(get("/not-found")).andExpect(status().isNotFound());
@@ -288,7 +288,7 @@ Traditional status matchers work but require the `status()` wrapper.
 import static org.assertj.core.api.Assertions.assertThat;
 
 @Test
-void testStatusCodes() {
+void statusCodes() {
     assertThat(mockMvc.get().uri("/ok")).hasStatusOk();
     assertThat(mockMvc.get().uri("/created")).hasStatus2xxSuccessful();
     assertThat(mockMvc.get().uri("/not-found")).hasStatus4xxClientError();

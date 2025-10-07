@@ -27,7 +27,7 @@ class CollectionAssertions {
     List<String> languages = List.of("Java", "Python", "JavaScript", "Kotlin");
 
     @Test
-    void testCollection() {
+    void collection() {
         assertFalse(languages.isEmpty());
         assertEquals(4, languages.size());
         assertTrue(languages.contains("Java"));
@@ -58,7 +58,7 @@ class CollectionAssertions {
     List<String> languages = List.of("Java", "Python", "JavaScript", "Kotlin");
 
     @Test
-    void testCollection() {
+    void collection() {
         assertThat(languages)
                 .isNotEmpty()
                 .hasSize(4)
@@ -96,7 +96,7 @@ class AdvancedCollectionAssertions {
     List<Integer> numbers = List.of(2, 4, 6, 8, 10);
 
     @Test
-    void testAllMatch() {
+    void allMatch() {
         boolean allEven = numbers.stream().allMatch(n -> n % 2 == 0);
         assertTrue(allEven);
 
@@ -124,7 +124,7 @@ class AdvancedCollectionAssertions {
     List<Integer> numbers = List.of(2, 4, 6, 8, 10);
 
     @Test
-    void testAllMatch() {
+    void allMatch() {
         assertThat(numbers)
                 .allMatch(n -> n % 2 == 0, "all numbers are even")
                 .anyMatch(n -> n > 5)
@@ -163,7 +163,7 @@ class DateAssertions {
     LocalDate today = LocalDate.now();
 
     @Test
-    void testDates() {
+    void dates() {
         assertTrue(now.isAfter(LocalDateTime.now().minusDays(1)));
         assertTrue(now.isBefore(LocalDateTime.now().plusDays(1)));
         assertEquals(2025, today.getYear());
@@ -195,7 +195,7 @@ class DateAssertions {
     LocalDate today = LocalDate.now();
 
     @Test
-    void testDates() {
+    void dates() {
         assertThat(now)
                 .isAfter(LocalDateTime.now().minusDays(1))
                 .isBefore(LocalDateTime.now().plusDays(1))
@@ -234,7 +234,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class DateToleranceAssertions {
 
     @Test
-    void testTimestampWithinTolerance() {
+    void timestampWithinTolerance() {
         LocalDateTime expected = LocalDateTime.of(2025, 10, 7, 12, 0, 0);
         LocalDateTime actual = LocalDateTime.of(2025, 10, 7, 12, 0, 3);
 
@@ -259,7 +259,7 @@ import static org.assertj.core.api.Assertions.within;
 class DateToleranceAssertions {
 
     @Test
-    void testTimestampWithinTolerance() {
+    void timestampWithinTolerance() {
         LocalDateTime expected = LocalDateTime.of(2025, 10, 7, 12, 0, 0);
         LocalDateTime actual = LocalDateTime.of(2025, 10, 7, 12, 0, 3);
 
@@ -298,7 +298,7 @@ class FileAssertions {
     Path configFile = Path.of("config.properties");
 
     @Test
-    void testFile() throws IOException {
+    void file() throws IOException {
         assertTrue(Files.exists(configFile));
         assertTrue(Files.isRegularFile(configFile));
         assertFalse(Files.isDirectory(configFile));
@@ -334,7 +334,7 @@ class FileAssertions {
     Path configFile = Path.of("config.properties");
 
     @Test
-    void testFile() {
+    void file() {
         assertThat(configFile)
                 .exists()
                 .isRegularFile()
@@ -375,7 +375,7 @@ class FileContentAssertions {
     Path logFile = Path.of("app.log");
 
     @Test
-    void testFileContent() throws IOException {
+    void fileContent() throws IOException {
         String content = Files.readString(logFile);
         assertTrue(content.contains("ERROR"));
 
@@ -400,7 +400,7 @@ class FileContentAssertions {
     Path logFile = Path.of("app.log");
 
     @Test
-    void testFileContent() {
+    void fileContent() {
         assertThat(logFile)
                 .content()
                 .contains("ERROR");
@@ -444,7 +444,7 @@ class MapAssertions {
     );
 
     @Test
-    void testMap() {
+    void map() {
         assertFalse(scores.isEmpty());
         assertEquals(3, scores.size());
         assertTrue(scores.containsKey("Alice"));
@@ -474,7 +474,7 @@ class MapAssertions {
     );
 
     @Test
-    void testMap() {
+    void map() {
         assertThat(scores)
                 .isNotEmpty()
                 .hasSize(3)
@@ -513,7 +513,7 @@ class StringAssertions {
     String email = "user@example.com";
 
     @Test
-    void testString() {
+    void string() {
         assertFalse(email.isEmpty());
         assertTrue(email.contains("@"));
         assertTrue(email.startsWith("user"));
@@ -536,7 +536,7 @@ class StringAssertions {
     String email = "user@example.com";
 
     @Test
-    void testString() {
+    void string() {
         assertThat(email)
                 .isNotEmpty()
                 .contains("@")
