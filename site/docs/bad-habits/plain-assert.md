@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 # Plain `assert`
 
 The built-in `assert` keyword in Java is a very basic mechanism for checking assumptions in code.

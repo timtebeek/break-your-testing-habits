@@ -1,3 +1,6 @@
+---
+sidebar_position: 5
+---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -11,7 +14,7 @@ There is a danger though for folks who upgraded without changing their existing 
 ## Confusing failure messages
 This can lead to confusing error messages when tests fail, as the expected and actual values will be reported incorrectly.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="ArgumentOrderTest.java"
@@ -63,7 +66,7 @@ class ArgumentOrderTest {
 
 Using AssertJ's fluent assertions can help avoid issues with argument order, as the actual value is always the subject of the assertion.
 
-::::
+:::
 
 </TabItem>
 </Tabs>
@@ -72,7 +75,7 @@ Using AssertJ's fluent assertions can help avoid issues with argument order, as 
 ## Incorrectly passing tests
 Worse still, if the values are of the same type, tests may pass when they should fail, or vice versa.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="ArgumentOrderTest.java"
@@ -93,7 +96,7 @@ class ArgumentOrderTest {
 
 The arguments to `assertNotNull` are in the wrong order. This test will incorrectly pass because the string "message" is not null.
 
-::::
+:::
 
 </TabItem>
 <TabItem value="after" label="After">
@@ -116,7 +119,7 @@ class ArgumentOrderTest {
 
 The message is now correctly associated with the assertion, and the test will fail as expected.
 
-::::
+:::
 
 </TabItem>
 </Tabs>

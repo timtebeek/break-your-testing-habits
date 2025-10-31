@@ -1,3 +1,6 @@
+---
+sidebar_position: 7
+---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -7,7 +10,7 @@ Using try/catch blocks with `fail()` calls to test for exceptions is an awkward 
 JUnit4 introduced the `@Test(expected=...)` annotation parameter to simplify this pattern, but it had its own limitations.
 An alternative `@Rule ExpectedException` approach was also available, but it was more verbose and more disconnected.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="TryCatchFailTest.java"

@@ -1,3 +1,6 @@
+---
+sidebar_position: 1
+---
 # Code coverage
 
 Sometimes when there's a poor test discipline, teams add a code coverage test to ensure a minimum percentage of code is covered by tests.

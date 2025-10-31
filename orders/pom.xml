@@ -16,37 +16,35 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.release>11</maven.compiler.release>
-        <!-- Already use Java 25 in tests, but not yet for runtime -->
-        <maven.compiler.testRelease>25</maven.compiler.testRelease>
+        <maven.compiler.release>17</maven.compiler.release>
+        <!-- Already use Java 21 in tests, but not yet for runtime -->
+        <maven.compiler.testRelease>21</maven.compiler.testRelease>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <version>3.5.6</version>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>1.3.2</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
-
-        <dependency>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest</artifactId>
-            <version>3.0</version>
-            <scope>test</scope>
-        </dependency>
-
         <dependency>
             <groupId>org.junit.vintage</groupId>
             <artifactId>junit-vintage-engine</artifactId>
@@ -56,24 +54,16 @@
 
     <build>
         <plugins>
+            <!-- Generate AssertJ assertion classes for domain objects with `mvn compile assertj:generate-assertions` -->
             <plugin>
-                <groupId>org.openrewrite.maven</groupId>
-                <artifactId>rewrite-maven-plugin</artifactId>
-                <version>6.19.0</version>
+                <groupId>org.assertj</groupId>
+                <artifactId>assertj-assertions-generator-maven-plugin</artifactId>
+                <version>2.2.0</version>
                 <configuration>
+                    <packages>
+                        <param>com.github.timtebeek.orders</param>
+                    </packages>
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.openrewrite.recipe</groupId>
-                        <artifactId>rewrite-migrate-java</artifactId>
-                        <version>3.18.0</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.openrewrite.recipe</groupId>
-                        <artifactId>rewrite-testing-frameworks</artifactId>
-                        <version>3.18.0</version>
-                    </dependency>
-                </dependencies>
             </plugin>
         </plugins>
     </build>

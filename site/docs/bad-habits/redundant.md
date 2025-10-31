@@ -1,3 +1,6 @@
+---
+sidebar_position: 6
+---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -7,7 +10,7 @@ Sometimes overlapping assertions are used in sequence, where one would imply the
 For example, checking that a list is not null before checking its size or contents is redundant,
 as a null list would cause the subsequent assertions to fail anyway.
 
-<Tabs groupId="state">
+<Tabs>
 <TabItem value="before" label="Before">
 
 ```java title="RedundantListTest.java"

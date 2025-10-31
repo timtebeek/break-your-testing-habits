@@ -15,13 +15,15 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">A workshop by Rick Ossendrijver and Tim te Beek.</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Start Tutorial
+            Get started
           </Link>
         </div>
+        <img src={siteConfig.themeConfig.image} style={{ marginTop: '2rem', maxWidth: '750px', width: '100%' }}  alt={'Tim and Rick'}/>
       </div>
     </header>
   );
@@ -32,7 +34,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Adopt better testing practices with automated refactoring">
+      description="Adopt better testing practices with automated refactoring.">
       <HomepageHeader />
       <main>
       </main>

@@ -1,3 +1,6 @@
+---
+sidebar_position: 0
+---
 # No tests
 
 From time to time you'll encounter a codebase with no tests at all.

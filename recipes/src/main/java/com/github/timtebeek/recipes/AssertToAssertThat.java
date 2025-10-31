@@ -1,7 +1,9 @@
 package com.github.timtebeek.recipes;
 
+import com.google.errorprone.refaster.ImportPolicy;
 import com.google.errorprone.refaster.annotation.AfterTemplate;
 import com.google.errorprone.refaster.annotation.BeforeTemplate;
+import com.google.errorprone.refaster.annotation.UseImportPolicy;
 import org.openrewrite.java.template.RecipeDescriptor;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -23,6 +25,7 @@ public class AssertToAssertThat {
         }
 
         @AfterTemplate
+        @UseImportPolicy(ImportPolicy.STATIC_IMPORT_ALWAYS)
         void after(Object actual) {
             assertThat(actual).isNull();
         }
@@ -36,6 +39,7 @@ public class AssertToAssertThat {
         }
 
         @AfterTemplate
+            // TODO Add static import policy
         void after(Object actual, String message) {
             assertThat(actual).as(message).isNull();
         }

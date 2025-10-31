@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Break your testing habits',
-  tagline: 'Adopt better testing practices with automated refactoring',
+  tagline: 'Adopt better testing practices with automated refactoring.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -20,7 +20,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://timtebeek.github.io/',
+  url: 'https://openrewrite.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   // baseUrl: '/',
@@ -51,7 +51,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/timtebeek/break-your-testing-habits/tree/main/site/',
+            'https://github.com/openrewrite/break-your-testing-habits/tree/main/site/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -79,10 +79,10 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Workshop',
           },
           {
-            href: 'https://github.com/timtebeek/break-your-testing-habits',
+            href: 'https://github.com/openrewrite/break-your-testing-habits',
             label: 'GitHub',
             position: 'right',
           },
@@ -103,6 +103,10 @@ const config = {
                   href: 'https://docs.moderne.io/',
               },
               {
+                  label: 'Picnic',
+                  href: 'https://picnic.app/',
+              },
+              {
                   label: 'Error Prone Support',
                   href: 'https://error-prone.picnic.tech/refasterrules/AssertJArrayRules/',
               },
@@ -118,6 +122,10 @@ const config = {
                 {
                     label: 'Moderne',
                     href: 'https://bsky.app/profile/did:plc:vnhmeu5qj3w4rdoagg4pan7g',
+                },
+                {
+                    label: 'Picnic Technologies',
+                    href: 'https://www.linkedin.com/company/picnictechnologies',
                 },
                 {
                     label: 'Tim',
@@ -137,6 +145,7 @@ const config = {
         darkTheme: prismThemes.dracula,
         additionalLanguages: [
             "bash",
+            "groovy",
             "java",
         ],
       },
