@@ -10,7 +10,7 @@ on:
       - main
 
 concurrency:
-  group: "maven"
+  group: "maven-${{ github.ref }}"
   cancel-in-progress: true
 
 jobs:
