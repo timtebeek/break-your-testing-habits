@@ -10,7 +10,7 @@ updates:
     schedule:
       interval: "weekly"
   - package-ecosystem: "maven"
-    directory: "/app"
+    directory: "/"
     schedule:
       interval: "weekly"
   - package-ecosystem: "npm"
