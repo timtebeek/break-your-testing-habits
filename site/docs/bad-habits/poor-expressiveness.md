@@ -15,7 +15,7 @@ For example, consider a test that checks if a list contains a specific element.
 <Tabs>
 <TabItem value="before" label="Before">
 
-```java title="PoorExpressivenessTest.java"
+```java title="AssertListContains.java"
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -24,7 +24,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class PoorExpressivenessTest {
+class AssertListContains {
 
     List<String> list = List.of("a", "b", "c");
 
@@ -46,14 +46,14 @@ This can complicate troubleshooting, especially when your tests only fail in cer
 </TabItem>
 <TabItem value="after" label="After">
 
-```java title="PoorExpressivenessTest.java"
+```java title="AssertListContains.java"
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class PoorExpressivenessTest {
+class AssertListContains {
 
     List<String> list = List.of("a", "b", "c");
 
