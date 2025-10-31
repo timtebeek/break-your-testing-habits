@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.6</version>
+        <version>3.5.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -26,7 +26,7 @@
             <dependency>
                 <groupId>org.openrewrite.recipe</groupId>
                 <artifactId>rewrite-recipe-bom</artifactId>
-                <version>3.15.0</version>
+                <version>3.17.0</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -53,7 +53,7 @@
         <dependency>
             <groupId>org.openrewrite</groupId>
             <artifactId>rewrite-templating</artifactId>
-            <version>1.36.1</version>
+            <version>1.37.0</version>
         </dependency>
         <dependency>
             <groupId>jakarta.annotation</groupId>
@@ -124,7 +124,7 @@
                         <path>
                             <groupId>org.openrewrite</groupId>
                             <artifactId>rewrite-templating</artifactId>
-                            <version>1.36.1</version>
+                            <version>1.37.0</version>
                         </path>
                     </annotationProcessorPaths>
                 </configuration>
@@ -132,7 +132,7 @@
             <plugin>
                 <groupId>org.openrewrite.maven</groupId>
                 <artifactId>rewrite-maven-plugin</artifactId>
-                <version>6.19.0</version>
+                <version>6.22.1</version>
                 <configuration>
                     <activeRecipes>
                         <recipe>org.openrewrite.recipes.rewrite.OpenRewriteRecipeBestPractices</recipe>
@@ -142,7 +142,7 @@
                     <dependency>
                         <groupId>org.openrewrite.recipe</groupId>
                         <artifactId>rewrite-rewrite</artifactId>
-                        <version>0.13.0</version>
+                        <version>0.14.1</version>
                     </dependency>
                 </dependencies>
             </plugin>
