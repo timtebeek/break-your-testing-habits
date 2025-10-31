@@ -12,13 +12,13 @@ class AssertListContains {
     List<String> list = List.of("a", "b", "c");
 
     @Test
-    void assertListSize() {
+    void assertListContains() {
         assertTrue(list.contains("b"));
     }
 
     @Disabled
     @Test
-    void assertListSizeFails() {
+    void assertListContainsFails() {
         assertTrue(list.contains("E"));
     }
 }
