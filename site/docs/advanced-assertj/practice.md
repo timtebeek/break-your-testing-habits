@@ -10,26 +10,14 @@ Now it's your turn! Apply the advanced AssertJ techniques you've learned to impr
 
 Navigate to `orders/src/test/java/com/github/timtebeek/orders/OrderServiceTest.java`.
 
-This test class works with a collection of orders and demonstrates several opportunities to use advanced AssertJ features:
-
-1. **Extracting properties** - Instead of manually extracting properties with streams or loops, use `extracting()`
-2. **Filtering collections** - Use `filteredOn()` to filter collections before asserting
-3. **Soft assertions** - Group multiple assertions that should all be checked
-4. **Flat extracting** - Use `flatExtracting()` for nested collections
+This test class works with a collection of orders and demonstrates several opportunities to use advanced AssertJ features.
 
 ### Your tasks
 
-1. Refactor the tests to use `extracting()` where appropriate
-2. Use `filteredOn()` to filter collections in a fluent way
-3. Replace multiple separate assertions with soft assertions
-4. Use `flatExtracting()` for nested collection operations
-
-## Tips
-
-- Use `extracting()` with method references for single properties
-- Use `filteredOn()` to filter before asserting
-- Use `SoftAssertions` when you want to check multiple conditions
-- Use `flatExtracting()` to work with nested collections
+1. **Use `extracting()`** - Replace manual stream mapping with method references to extract properties from collections
+2. **Use `filteredOn()`** - Replace manual stream filtering with fluent filtering predicates
+3. **Use `SoftAssertions`** - Group multiple assertions on the same object so all conditions are checked
+4. **Use `flatExtracting()`** - Replace manual flatMap operations when working with nested collections
 
 ## Solution
 
